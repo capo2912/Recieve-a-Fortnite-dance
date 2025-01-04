@@ -1,7 +1,6 @@
 # Recieve a Fortnite Dance - $FORT
 
-This is a sample web project that generates a random Fortnite dance for each user.  
-It's meant to demonstrate how you can integrate fun animations and a "crypto" concept on a GitHub-hosted page.
+This project is a demo website that generates a random Fortnite dance for each user.
 
 ## How to Run Locally
 1. Clone this repository to your local machine.
@@ -17,9 +16,13 @@ It's meant to demonstrate how you can integrate fun animations and a "crypto" co
 6. You’ll get a GitHub Pages URL. Share it with friends!
 
 ## Customization
-- **Images**: Replace the placeholder images (`via.placeholder.com`) with Fortnite-themed images or GIFs.
-- **Dances**: Modify the `dances` array in `script.js` to include your own dances or animations.
+- **Images**: 
+  - The Fortnite island background is defined in `style.css` under `#island-background`.
+  - The chest image is in `index.html`. 
+  - The dance GIFs are listed in `script.js` under the `dances` array.
+- **Dances**: Modify the `dances` array in `script.js` to include your own dance names and GIFs.
 - **Styles**: Edit `style.css` to achieve the desired look and feel for your brand/theme.
 
 ## Disclaimer
-This project is purely for demonstration purposes. It is not affiliated with or endorsed by Epic Games or Fortnite.
+- This project is for demonstration purposes only, not affiliated with or endorsed by Epic Games or Fortnite.
+- The images and GIFs used here are external references or placeholders; ensure you have appropriate permissions or use your own resources.
