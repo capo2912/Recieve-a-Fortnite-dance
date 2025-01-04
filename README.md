@@ -1,4 +1,4 @@
-# Relieve a Fortnite Dance - $FORT
+# Recieve a Fortnite Dance - $FORT
 
 This is a sample web project that generates a random Fortnite dance for each user.  
 It's meant to demonstrate how you can integrate fun animations and a "crypto" concept on a GitHub-hosted page.
