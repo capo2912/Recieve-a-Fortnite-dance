@@ -1,26 +1,32 @@
-// Array of sample dances (you can replace with real Fortnite dances)
+// Array of sample dances with real Fortnite dance references or GIFs.
+// NOTA: Las URLs que se muestran aquí son ejemplos de Internet o Giphy.
+// Asegúrate de tener permisos para usarlas o bien aloja tus propias imágenes.
 const dances = [
   {
     name: "Dance 1: Floss",
-    gif: "https://via.placeholder.com/200?text=Floss",
+    gif: "https://media.giphy.com/media/3o7abBphvUK6l1F9Xa/giphy.gif",
     description: "You got the iconic Floss dance!"
   },
   {
     name: "Dance 2: Take the L",
-    gif: "https://via.placeholder.com/200?text=Take+the+L",
+    gif: "https://media.giphy.com/media/l4KhTZaJGNb5sQ2Ws/giphy.gif",
     description: "You got the savage Take the L dance!"
   },
   {
     name: "Dance 3: Orange Justice",
-    gif: "https://via.placeholder.com/200?text=Orange+Justice",
+    gif: "https://media.giphy.com/media/8L0Pky6C83SzkzU55a/giphy.gif",
     description: "You got the groovy Orange Justice dance!"
   },
   {
     name: "Dance 4: Hype",
-    gif: "https://via.placeholder.com/200?text=Hype",
+    gif: "https://media.giphy.com/media/2yxO90n7bty2YHM7fB/giphy.gif",
     description: "You got the energetic Hype dance!"
   },
-  // Add as many as you like...
+  {
+    name: "Dance 5: Electro Shuffle",
+    gif: "https://media.giphy.com/media/9Pk2enI4xVeF5g6vHl/giphy.gif",
+    description: "You got the iconic Electro Shuffle!"
+  }
 ];
 
 // Function to show the main screen
@@ -54,8 +60,8 @@ window.addEventListener("DOMContentLoaded", () => {
       alert("Please enter your name first.");
       return;
     }
-    // You could store the player's name if you want to use it later
-    // e.g. localStorage.setItem("fortPlayerName", playerName);
+    // (Opcional) Guárdalo si planeas usarlo luego
+    // localStorage.setItem("fortPlayerName", playerName);
     showMainScreen();
   });
 
