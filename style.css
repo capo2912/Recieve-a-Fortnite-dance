@@ -1,0 +1,142 @@
+/* RESET & BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Consolas, monospace;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+/* HIDDEN CLASS */
+.hidden {
+  display: none;
+}
+
+/* HACKER-STYLE START SCREEN */
+#start-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0C0C0C; /* Dark background */
+  color: #0f0; /* Green hacker text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#start-screen-content {
+  z-index: 2;
+  text-align: center;
+}
+
+#start-screen-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+#hacker-animated-text {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  animation: hackerTextFlicker 2s infinite;
+}
+
+#player-name {
+  padding: 8px;
+  font-size: 1rem;
+  background: #000;
+  color: #0f0;
+  border: 1px solid #0f0;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#enter-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #0f0;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Hacker-style overlay effect */
+#hacker-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    rgba(0, 255, 0, 0.05) 0px,
+    rgba(0, 255, 0, 0.05) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  z-index: 1;
+  pointer-events: none; /* Allow interactions below */
+}
+
+/* KEYFRAMES: Hacker text flicker */
+@keyframes hackerTextFlicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* MAIN SCREEN */
+#main-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111; /* Dark background */
+}
+
+/* BUTTON */
+#button-container {
+  text-align: center;
+}
+
+#dance-btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #0f0;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#dance-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #0f0, 0 0 30px #0f0;
+}
+
+/* DANCE NAME */
+#dance-name {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #ff0; /* Bright yellow */
+  text-shadow: 0 0 10px #ff0, 0 0 20px #ff0;
+  animation: glow 1.5s infinite;
+}
+
+/* KEYFRAMES: Glowing dance name */
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 10px #ff0, 0 0 20px #ff0; }
+  50% { text-shadow: 0 0 20px #ff0, 0 0 40px #ff0; }
+}
