@@ -53,15 +53,16 @@ html, body {
   overflow: hidden;
 }
 
-/* Fortnite Island Background (placeholder styling) */
+/* Fortnite Island Background */
 #island-background {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* Replace with an actual Fortnite island image or video background if you have one */
-  background: url('https://via.placeholder.com/1920x1080?text=Fortnite+Island+Background') center center/cover no-repeat;
+  /* Ejemplo de imagen del mapa de Fortnite */
+  background: url('https://cdn2.unrealengine.com/Fortnite%2Fblog%2Fbattle-royale-launch%2FBR_KeyArt_ExtraWide-1600x590-1a82e569d7082e7247bf031fd14f3c276b7cfe7d.jpg')
+              center center/cover no-repeat;
   filter: blur(2px);
   z-index: 0;
 }
