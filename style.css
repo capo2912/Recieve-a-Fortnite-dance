@@ -1,0 +1,123 @@
+/* Basic resets & fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Full width/height for background sections */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+/* START SCREEN */
+#start-screen {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#start-screen-content {
+  text-align: center;
+  color: #fff;
+  background: rgba(0,0,0,0.6);
+  padding: 20px 30px;
+  border-radius: 8px;
+}
+
+#start-screen h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* MAIN SCREEN */
+.hidden {
+  display: none;
+}
+
+#main-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Fortnite Island Background (placeholder styling) */
+#island-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Replace with an actual Fortnite island image or video background if you have one */
+  background: url('https://via.placeholder.com/1920x1080?text=Fortnite+Island+Background') center center/cover no-repeat;
+  filter: blur(2px);
+  z-index: 0;
+}
+
+/* Chest Container */
+#chest-container {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  top: 25%;
+  width: 300px;
+  text-align: center;
+}
+
+#chest-img {
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+#chest-img:hover {
+  transform: scale(1.05);
+}
+
+/* Dance Result Section */
+#dance-result {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(10, 10, 10, 0.8);
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  animation: fadeIn 1s forwards;
+}
+
+#dance-result h2 {
+  margin-bottom: 10px;
+}
+
+#dance-gif {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
